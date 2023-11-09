@@ -4,11 +4,13 @@ import kr.co.bonjin.livepreview.model.dto.PreviewRequestDto
 import kr.co.bonjin.livepreview.response.ApiDataResponse
 import kr.co.bonjin.livepreview.response.ApiResponse
 import kr.co.bonjin.livepreview.service.CrawlingService
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 
 
+@CrossOrigin(origins = ["*"])
 @RestController
 class ApiController(
     private val crawlingService: CrawlingService
