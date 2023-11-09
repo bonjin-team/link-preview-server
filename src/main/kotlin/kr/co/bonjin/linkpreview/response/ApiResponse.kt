@@ -1,6 +1,6 @@
-package kr.co.bonjin.livepreview.response
+package kr.co.bonjin.linkpreview.response
 
-import kr.co.bonjin.livepreview.exception.ApiError
+import kr.co.bonjin.linkpreview.exception.ApiError
 
 open class ApiResponse {
     //공통적으로 갖고 있는것

@@ -1,4 +1,4 @@
-package kr.co.bonjin.livepreview.exception
+package kr.co.bonjin.linkpreview.exception
 
 class ApiError(var code: String, var message: String) {
     companion object {

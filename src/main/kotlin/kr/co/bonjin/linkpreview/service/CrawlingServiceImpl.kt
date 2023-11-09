@@ -1,7 +1,7 @@
-package kr.co.bonjin.livepreview.service
+package kr.co.bonjin.linkpreview.service
 
-import kr.co.bonjin.livepreview.model.PreviewModel
-import kr.co.bonjin.livepreview.provider.JsoupProvider
+import kr.co.bonjin.linkpreview.model.PreviewModel
+import kr.co.bonjin.linkpreview.provider.JsoupProvider
 import org.springframework.stereotype.Service
 
 @Service

@@ -1,4 +1,4 @@
-package kr.co.bonjin.livepreview.model
+package kr.co.bonjin.linkpreview.model
 
 data class PreviewModel(
     var title: String,

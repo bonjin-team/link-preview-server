@@ -1,9 +1,9 @@
-package kr.co.bonjin.livepreview.controller
+package kr.co.bonjin.linkpreview.controller
 
-import kr.co.bonjin.livepreview.model.dto.PreviewRequestDto
-import kr.co.bonjin.livepreview.response.ApiDataResponse
-import kr.co.bonjin.livepreview.response.ApiResponse
-import kr.co.bonjin.livepreview.service.CrawlingService
+import kr.co.bonjin.linkpreview.model.dto.PreviewRequestDto
+import kr.co.bonjin.linkpreview.response.ApiDataResponse
+import kr.co.bonjin.linkpreview.response.ApiResponse
+import kr.co.bonjin.linkpreview.service.CrawlingService
 import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

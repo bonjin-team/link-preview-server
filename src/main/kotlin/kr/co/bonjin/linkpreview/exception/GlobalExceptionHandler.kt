@@ -1,6 +1,6 @@
-package kr.co.bonjin.livepreview.exception
+package kr.co.bonjin.linkpreview.exception
 
-import kr.co.bonjin.livepreview.response.ApiResponse
+import kr.co.bonjin.linkpreview.response.ApiResponse
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.RestControllerAdvice
 

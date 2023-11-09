@@ -1,4 +1,4 @@
-package kr.co.bonjin.livepreview.exception
+package kr.co.bonjin.linkpreview.exception
 
 class ApiException(apiError: ApiError, message: String) : RuntimeException() {
     val code: String

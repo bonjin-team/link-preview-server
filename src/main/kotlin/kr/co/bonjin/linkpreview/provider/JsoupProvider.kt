@@ -1,8 +1,7 @@
-package kr.co.bonjin.livepreview.provider
+package kr.co.bonjin.linkpreview.provider
 
-import kr.co.bonjin.livepreview.model.PreviewModel
+import kr.co.bonjin.linkpreview.model.PreviewModel
 import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
 import org.springframework.stereotype.Service
 import java.io.IOException
 import java.util.*

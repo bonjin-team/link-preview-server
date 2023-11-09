@@ -1,11 +1,11 @@
-package kr.co.bonjin.livepreview
+package kr.co.bonjin.linkpreview
 
-import kr.co.bonjin.livepreview.provider.JsoupProvider
+import kr.co.bonjin.linkpreview.provider.JsoupProvider
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class LivePreviewApplicationTests(
+class LinkPreviewApplicationTests(
     private val jsoupProvider: JsoupProvider
 ) {
 

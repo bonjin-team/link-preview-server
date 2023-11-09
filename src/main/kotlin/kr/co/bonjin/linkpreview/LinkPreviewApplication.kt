@@ -1,11 +1,11 @@
-package kr.co.bonjin.livepreview
+package kr.co.bonjin.linkpreview
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class LivePreviewApplication
+class LinkPreviewApplication
 
 fun main(args: Array<String>) {
-    runApplication<LivePreviewApplication>(*args)
+    runApplication<LinkPreviewApplication>(*args)
 }

@@ -1,1 +1,1 @@
-rootProject.name = "live-preview"
+rootProject.name = "link-preview"
