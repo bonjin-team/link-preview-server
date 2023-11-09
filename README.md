@@ -31,16 +31,49 @@
 ```
 
 ## Status Codes
-| Status Code | Description |
+| HTTP Status Code | Description |
 | :--- | :---|
-| 200 | `OK` |
-| 201 | `CREATED` |
-| 400 | `BAD REQUEST` |
-| 404 | `NOT FOUND` |
-| 500 | `INTERNAL SERVER ERROR` |
+| `200` | OK |
+| `201` | CREATED |
+| `400` | BAD REQUEST |
+| `404` | NOT FOUND |
+| `500` | INTERNAL SERVER ERROR |
+
+| API Status | Description |
+| :--- | :---|
+| `OK` | 성공 |
+| `Failed` | 실패 |
+
+#### 성공
+```json
+{
+  "status":"OK",
+  "data":{
+    "title":"title",
+    "description":"description",
+    "image":"image",
+    "url":"url"
+  },
+  "error":{
+    "code":"",
+    "message":""
+  }
+}
+```
+
+#### 실패
+```json
+{
+    "status": "Failed",
+    "error": {
+        "code": "code",
+        "message": "message"
+    }
+}
+```
 
 ## Examples
-Request
+#### Request
 ```http
 curl -X POST http://localhost:8080/api \
 -H "Content-Type: application/json" \
@@ -49,18 +82,19 @@ curl -X POST http://localhost:8080/api \
 }'
 ```
 
-Response
+#### Response
 ```json
 {
   "status":"OK",
   "data":{
     "title":"네이버",
     "description":"네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요",
-    "image":"https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png","url":"https://www.naver.com/"},
+    "image":"https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png",
+    "url":"https://www.naver.com/"
+  },
   "error":{
     "code":"",
     "message":""
   }
 }
 ```
-
