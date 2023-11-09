@@ -16,7 +16,7 @@ class ApiController(
     private val crawlingService: CrawlingService
 ) {
 
-    @PostMapping(value = ["/", ""])
+    @PostMapping(value = ["/", "", "/api"])
     fun get(@RequestBody dto: PreviewRequestDto): ApiResponse {
         val response = crawlingService.get(dto.url)
         return ApiDataResponse(response)
