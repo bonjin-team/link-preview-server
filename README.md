@@ -1,5 +1,6 @@
 # link-preview-server
 
+[OG(Open Graph)](https://ogp.me/) LinkPreview는 입력받은 url로 og 정보를 크롤링해서 미리보기에 필요한 정보를 응답해줍니다. 
 
 ## Request
 | Field | Type | Description |
