@@ -75,11 +75,7 @@
 ## Examples
 #### Request
 ```http
-curl -X POST http://localhost:8080/api \
--H "Content-Type: application/json" \
--d '{
-  "url": "https://www.naver.com"
-}'
+curl -X POST http://localhost:8080/api -H "Content-Type: application/json" -d '{"url": "https://www.naver.com"}'
 ```
 
 #### Response
