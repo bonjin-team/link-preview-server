@@ -4,10 +4,7 @@ import kr.co.bonjin.linkpreview.model.dto.PreviewRequestDto
 import kr.co.bonjin.linkpreview.response.ApiDataResponse
 import kr.co.bonjin.linkpreview.response.ApiResponse
 import kr.co.bonjin.linkpreview.service.CrawlingService
-import org.springframework.web.bind.annotation.CrossOrigin
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 
 @CrossOrigin(origins = ["*"])
@@ -16,9 +13,15 @@ class ApiController(
     private val crawlingService: CrawlingService
 ) {
 
+    @GetMapping(value = ["/"])
+    fun get(): ApiResponse {
+        return ApiDataResponse("Get Request Success")
+    }
+
     @PostMapping(value = ["/", "", "/api"])
-    fun get(@RequestBody dto: PreviewRequestDto): ApiResponse {
+    fun post(@RequestBody dto: PreviewRequestDto): ApiResponse {
         val response = crawlingService.get(dto.url)
         return ApiDataResponse(response)
     }
+
 }
